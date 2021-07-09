@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fafafa;
+  font-family: "Tajawal", sans-serif;
 }
 
 nav {
@@ -61,6 +62,10 @@ nav {
 
 footer {
   padding: 0 14rem;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  background-color: #ffffff;
 }
 
 .profile-pic {
@@ -79,21 +84,28 @@ footer {
 
 .profile-info {
   display: flex;
+  flex-direction: column;
+  column-gap: 20px;
 }
+
 .profile-info .username {
-  font-size: 32px;
+  font-size: 37px;
   color: #545454;
+  margin-top: 0;
 }
 
 .profile-info #follow {
   background-color: rgb(0, 149, 246);
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 550;
   color: #fafafa;
-  width: 6.5rem;
-  height: 2.2rem;
+  width: 8rem;
+  height: 2.44rem;
   border: none;
   cursor: pointer;
   border-radius: 3px;
+  position: absolute;
+  right: 680px;
 }
 
 .profile-info #options {
@@ -104,28 +116,40 @@ footer {
   font-size: 1.1rem;
   color: #545454;
   cursor: pointer;
+  position: absolute;
+  right: 618px;
 }
 
 .gallery-nav {
-  background-color: violet;
   height: 4rem;
+  margin-bottom: -1rem;
 }
 
 .gallery {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 1.8rem;
+  row-gap: 1.8rem; */
   margin-bottom: 3rem;
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .gallery a {
   text-decoration: none;
+  margin: 1rem 0;
 }
 
 .images {
-  height: 20rem;
-  width: 20rem;
+  height: 20.4rem;
+  width: 20.4rem;
   background: #000;
+}
+
+.vid {
+  height: 20.4rem;
+  width: 20.4rem;
 }
 
 .images img,
@@ -138,4 +162,7 @@ footer {
 .images img:hover,
 .images video:hover {
   opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
 }
