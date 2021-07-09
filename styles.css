@@ -150,6 +150,19 @@ footer {
 .vid {
   height: 20.4rem;
   width: 20.4rem;
+  position: relative;
+}
+
+.press {
+  position: absolute;
+  top: 142px;
+  right: 142px;
+}
+
+#btn {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
 }
 
 .images img,
