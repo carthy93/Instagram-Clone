@@ -10,10 +10,20 @@ about.appendChild(para);
 const report = document.querySelector("#options");
 const modal = document.querySelector(".modal");
 
-// report.onclick = () => {
-//   modal.classList.add(".active");
-// };
-
-report.addEventListener("click", function () {
+report.onclick = () => {
   modal.classList.add("active");
-});
+};
+
+// report.addEventListener("click", function () {
+//   modal.classList.add("active");
+// });
+
+const cancel = document.getElementsByTagName("button")[6];
+cancel.style.color = "black";
+cancel.style.fontWeight = "600";
+cancel.onclick = () => {
+  modal.classList.remove("active");
+};
+modal.onclick = () => {
+  modal.classList.remove("active");
+};
