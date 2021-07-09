@@ -69,8 +69,8 @@ footer {
 }
 
 .profile-pic {
-  height: 10rem;
-  width: 10rem;
+  height: 11rem;
+  width: 11rem;
   border-radius: 50%;
   border: 1px solid #dbdbdb;
 }
@@ -164,5 +164,79 @@ footer {
   opacity: 0.5;
 }
 
+.modal {
+  background-color: blue;
+  box-sizing: border-box;
+  width: 20%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.report {
+  list-style-type: none;
+
+  overflow: hidden;
+}
+
+.report #button {
+  border-bottom: 0;
+  border-right: 0;
+  border-left: 0;
+  cursor: pointer;
+  width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
+  .nav,
+  header {
+    width: 100%;
+  }
+  .search-bar,
+  .icons {
+    display: none;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0.3rem;
+
+    width: 100%;
+  }
+
+  .gallery a {
+    text-decoration: none;
+  }
+
+  .images {
+    height: 12.4rem;
+    width: 12.4rem;
+    background: #000;
+  }
+
+  .vid {
+    height: 12.4rem;
+    width: 12.4rem;
+  }
+
+  .images img,
+  .images video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .images img:hover,
+  .images video:hover {
+    opacity: 0.5;
+  }
+
+  .profile-info #options,
+  .profile-info #follow {
+    display: none;
+  }
+  .profile {
+    padding: 0px;
+  }
 }
