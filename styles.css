@@ -237,12 +237,13 @@ footer {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.5s;
+  overflow: hidden;
 }
 
 .block {
   background-color: #ffffff;
-  width: 30%;
-  height: 30%;
+  width: 35%;
+  height: 40%;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -271,6 +272,9 @@ footer {
   .nav,
   header {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .search-bar,
   .icons {

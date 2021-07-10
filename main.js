@@ -28,19 +28,32 @@ modal.onclick = () => {
   modal.classList.remove("active");
 };
 
-const video = document.querySelector(".vid");
+const video = document.querySelector("#vi");
 const press = document.querySelector("#btn");
 
-const playPause = () => {
-  if (video.paused) {
-    video.play();
-    press.style.visibility = "hidden";
-  } else {
-    video.pause();
-    press.style.visibility = "Visible";
-  }
+press.onclick = () => {
+  video.play();
+  press.style.visibility = "hidden";
 };
 
-press.onclick = () => {
-  playPause();
+video.onclick = () => {
+  video.pause();
+  press.style.visibility = "visible";
+};
+
+const blockThisUser = document.getElementsByTagName("button")[4];
+const blockUser = document.querySelector(".blockUser");
+
+blockThisUser.onclick = () => {
+  blockUser.classList.add("active");
+};
+
+const cancel1 = document.getElementsByTagName("button")[9];
+cancel1.style.color = "black";
+cancel1.style.fontWeight = "600";
+cancel1.onclick = () => {
+  blockUser.classList.remove("active");
+};
+blockUser.onclick = () => {
+  blockUser.classList.remove("active");
 };
