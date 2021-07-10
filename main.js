@@ -18,7 +18,7 @@ report.onclick = () => {
 //   modal.classList.add("active");
 // });
 
-const cancel = document.getElementsByTagName("button")[6];
+const cancel = document.getElementsByTagName("button")[7];
 cancel.style.color = "black";
 cancel.style.fontWeight = "600";
 cancel.onclick = () => {
@@ -26,4 +26,21 @@ cancel.onclick = () => {
 };
 modal.onclick = () => {
   modal.classList.remove("active");
+};
+
+const video = document.querySelector(".vid");
+const press = document.querySelector("#btn");
+
+const playPause = () => {
+  if (video.paused) {
+    video.play();
+    press.style.visibility = "hidden";
+  } else {
+    video.pause();
+    press.style.visibility = "Visible";
+  }
+};
+
+press.onclick = () => {
+  playPause();
 };
